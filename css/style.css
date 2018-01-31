@@ -1,0 +1,135 @@
+body {
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+a {
+  color: #212121;
+}
+
+.Wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, auto);
+  grid-row-gap: 10px;
+}
+@media (min-width: 760px) {
+  .Wrapper {
+    grid-template-columns: 20% 1fr 20%;
+  }
+}
+
+.Header {
+  grid-row: 1;
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 10rem;
+  padding-top: 2rem;
+}
+.Header-title {
+  font-family: "Ropa Sans", sans-serif;
+  font-size: 2.1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 1rem 0;
+}
+.Header-subTitle {
+  color: #E91E63;
+  font-family: "Rubik", sans-serif;
+  font-size: 1.2rem;
+}
+
+.PrimaryNav {
+  grid-row: 2;
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+.PrimaryNav-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+@media (min-width: 760px) {
+  .PrimaryNav-list {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+.PrimaryNav-list li {
+  padding: 1rem 2rem;
+}
+
+.MainContent {
+  grid-row-start: 3;
+  grid-column: 1 / -1;
+}
+@media (min-width: 760px) {
+  .MainContent {
+    grid-column: 2;
+  }
+}
+
+.Container {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  line-height: 1.5;
+}
+
+.Social {
+  grid-column: 1 / -1;
+}
+.Social-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 760px) {
+  .Social-links {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+
+.Footer {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 10rem;
+  font-size: 1.2rem;
+}
+
+.Avatar {
+  width: 150px;
+  height: 150px;
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/708107/profile/profile-512.jpg?1506027564");
+  background-size: cover;
+  background-color: pink;
+  border: 0.5rem solid #CDDC39;
+  border-radius: 50%;
+  animation: showAvatar 0.9s cubic-bezier(1, 0, 0, 0.92);
+}
+
+@keyframes showAvatar {
+  0% {
+    clip-path: circle(0);
+  }
+  100% {
+    clip-path: circle(5rem);
+  }
+}
+.support-msg {
+  padding: 20px;
+}
+@supports (display: grid) {
+  .support-msg .support-msg {
+    display: none;
+  }
+}
