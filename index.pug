@@ -5,12 +5,12 @@
     .Header-subTitle Frontend Engineer 
   .PrimaryNav
     ul.PrimaryNav-list
-      li
-        a(href="/") Home
-      li 
-        a(href="https://www.linkedin.com/in/danielagattoni/") Work
-      li 
-        a(href="https://www.linkedin.com/in/danielagattoni/") Talks
+      li.PrimaryNav-item
+        a.PrimaryNav-link(href="/" target="_blank" title="Home") Home
+      li.PrimaryNav-item 
+        a.PrimaryNav-link(href="https://www.linkedin.com/in/danielagattoni/" target="_blank" title="Work") Work
+      li.PrimaryNav-item 
+        a.PrimaryNav-link(href="https://www.linkedin.com/in/danielagattoni/" target="_blank" title="Talks") Talks
 
   main.MainContent
     .Container
@@ -30,16 +30,18 @@
           li Practicing Music and Guitar.
           li Cycling with friends around Parks.
           li Participate in hackathons and volunteering as Coach/Speaker at inclusive Tech events!
+
   .Social
-      ul.Social-links
-        li.Social-link
-          a(href="https://codepen.io/danigattoni" title="Codepen") Codepen
-        li.Social-link
-          a(href="https://github.com/dgattoni" title="Github") Github
-        li.Social-link
-          a(href="https://www.linkedin.com/in/danielagattoni/" title="Linkedin") Linkedin
-        li.Social-link
-            a(href="https://twitter.com/danigattoni_" title="Twitter") Twitter
+    p Find me on:
+    ul.Network
+      li.Network-item.Network-item--codepen
+        a.Network-link(href="https://codepen.io/danigattoni" target="_blank" title="Codepen") Codepen
+      li.Network-item.Network-item--github
+        a.Network-link(href="https://github.com/dgattoni" target="_blank" title="Github") Github
+      li.Network-item.Network-item--linkedin
+        a.Network-link(href="https://www.linkedin.com/in/danielagattoni/" target="_blank" title="Linkedin") Linkedin
+      li.Network-item.Network-item--twitter
+        a.Network-link(href="https://twitter.com/danigattoni_" target="_blank" title="Twitter") Twitter
 
   footer.Footer
     .Container
