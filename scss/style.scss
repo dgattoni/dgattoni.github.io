@@ -65,6 +65,10 @@ a {
   grid-row-gap: 10px;
   
   @include break(md) {
+    grid-template-columns: 10% 1fr 10%;
+  }
+
+  @include break(xl) {
     grid-template-columns: 20% 1fr 20%;
   }
 }

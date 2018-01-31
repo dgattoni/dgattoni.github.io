@@ -16,6 +16,11 @@ a {
 }
 @media (min-width: 760px) {
   .Wrapper {
+    grid-template-columns: 10% 1fr 10%;
+  }
+}
+@media (min-width: 1280px) {
+  .Wrapper {
     grid-template-columns: 20% 1fr 20%;
   }
 }
