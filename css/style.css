@@ -4,7 +4,7 @@ body {
   font-weight: 300;
 }
 
-a {
+  a {
   color: #212121;
 }
 
@@ -44,6 +44,7 @@ a {
   min-height: 10rem;
   padding-top: 2rem;
 }
+
 .Header-title {
   font-family: "Ropa Sans", sans-serif;
   font-size: 2.1rem;
@@ -51,12 +52,47 @@ a {
   text-transform: uppercase;
   margin: 1rem 0;
 }
+
 .Header-subTitle {
   color: #E91E63;
   font-family: "Rubik", sans-serif;
   font-size: 1.2rem;
 }
 
+.Blog-title {
+  font-family: "Ropa Sans", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin: 0.5rem 0;
+}
+
+.Post-title {
+  font-family: "Ropa Sans", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin: 1rem 0;
+}
+
+.Blog-subTitle {
+  color: rgb(6, 169, 233);
+  font-size: 1.2rem;
+  padding: 0 2rem;
+  font-weight: 400;
+
+}
+
+
+.Blog-subTitle {
+  color: rgb(6, 169, 233);
+  font-size: 1.2rem;
+  padding: 0 2rem;
+  font-weight: 400;
+
+}
+
+.Article-post {
+  padding-bottom: 2rem;
+}
 .PrimaryNav {
   grid-row: 2;
   grid-column: 1 / -1;
@@ -198,6 +234,7 @@ a {
 
 .Footer {
   grid-column: 1 / -1;
+  grid-row-start: 4;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -285,4 +322,54 @@ a {
     -webkit-transform: rotate(-5deg);
             transform: rotate(-5deg);
   }
+}
+
+
+.BlogContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  padding: 0.5rem;
+}
+
+.Grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  margin-bottom: 2rem;
+}
+
+.Card {
+  position: relative;
+  display: flex;
+  width: 96%;
+  color: #EBEBEB;
+  text-align: center;
+  background-color: #fff;
+  border: 10px solid #292A2C;
+  border-radius: 8px;
+  box-shadow: -10px 11px 0px 3px #E5E5E5;
+}
+
+.Card img {
+  width: 100%
+}
+
+.Card-frame {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 80%;
+  margin-top: 1rem;
+  border: 1px solid red;
+}
+
+.Card-name a {
+  color: #292A2C;
+  text-decoration-style: dashed;
 }
