@@ -346,6 +346,7 @@ body {
   position: relative;
   display: flex;
   width: 96%;
+  height: auto;
   color: #EBEBEB;
   text-align: center;
   background-color: #fff;
@@ -355,7 +356,8 @@ body {
 }
 
 .Card img {
-  width: 100%;
+  max-width: 100%;
+  max-height: fit-content;
   height: auto;
 }
 
