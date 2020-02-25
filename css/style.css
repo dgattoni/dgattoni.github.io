@@ -344,22 +344,20 @@ body {
 
 .Card {
   position: relative;
-  display: flex;
+  display: block;
   width: 96%;
-  height: auto;
   color: #EBEBEB;
   text-align: center;
-  background-color: #fff;
+  background-color: #000;
   border: 10px solid #292A2C;
   border-radius: 8px;
   box-shadow: -10px 11px 0px 3px #E5E5E5;
 }
 
 .Card img {
-  max-width: 100%;
-  max-height: fit-content;
-  height: auto;
-}
+   max-width: 100%;
+   max-height: 100%;
+ }
 
 .Card-name a {
   color: #292A2C;
