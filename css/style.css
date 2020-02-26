@@ -359,6 +359,11 @@ body {
    max-height: 100%;
  }
 
+ figcaption {
+   font-size: 0.8rem;
+   padding-bottom: 0.5rem;
+ }
+
 .Card-name a {
   color: #292A2C;
   text-decoration-style: dashed;
