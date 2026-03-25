@@ -173,6 +173,11 @@
       flex-shrink: 0;
     }
 
+    .home-link {
+      font-family: 'Oswald', sans-serif;
+      @apply text-xl font-bold text-gray-900 no-underline;
+    }
+
     /* ── Scrollbar ──────────────────────────────── */
     ::-webkit-scrollbar         { width: 5px; }
     ::-webkit-scrollbar-track   { background: #fafafa; }
