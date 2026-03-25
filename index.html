@@ -1,59 +1,260 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
-  <title>Daniela Gattoni | Full-Stack Software Engineer</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta property="og:title" content="Daniela Gattoni | Full-Stack Software Engineer" />
-<meta property="og:description" content="I am Full-Stack Software Engineer with experience in Ruby on Rails, Typescript, CSS, HTML, Node/Express, ReactJS, NextJS." />
-<meta property="og:url" content="https://dgattoni.github.io" />
-<meta property="og:image" content="https://s3-us-west-2.amazonaws.com/s.cdpn.io/708107/daniela-gattoni-frontend-engineer.jpg" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Ropa+Sans:400,400i'>
-<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,400i,500,700'>
-<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Rubik:400,700'>
-<link rel="stylesheet" href="css/style.css">
+  <title>Daniela Gattoni — Full-Stack Software Engineer</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap"
+    rel="stylesheet" />
+  <link href="./output.css" rel="stylesheet">
 </head>
-<body>
-<div class="Wrapper">
-  <div class="Header">
-    <div class="Avatar"></div>
-    <div class="Header-title">Daniela Gattoni</div>
-    <div class="Header-subTitle">Full-Stack Software Engineer</div>
-    <div class="Header-location">Melbourne, Australia</div>
-  </div>
-  <div class="PrimaryNav">
-    <ul class="PrimaryNav-list">
-      <li class="PrimaryNav-item"><a class="PrimaryNav-link" href="/" target="_blank" title="Home">Home</a></li>
-      <li class="PrimaryNav-item"> <a class="PrimaryNav-link" href="https://www.linkedin.com/in/danielagattoni/" target="_blank" title="LinkedIn">LinkedIn</a></li>
-    </ul>
-  </div>
-  <main class="MainContent">
-    <div class="Container">
-      <h3>Hello There!</h3>
-      <h4>I am a Full-Stack Software Engineer with 10+ years of experience in software development.</h4>
-      <p>I have coded a wide variety of web applications with a focus on high-quality code based on Typescript, Ruby on Rails, Active Record, GraphQL, Unit and System Testing with RSpec and Capibara, React Testing Library, Jest, Vitest, ReactJS, CSS, Web Accessibility Standards and Visual Studio Code with AI-powered coding assistant tools.</p>
-      <p>I strongly believe in the importance of code reviews and testing to ensure quality and maintainability.</p>
-      <p>I have worked closely with Agile Project Managers, UX/UI Designers, and other Full Stack Engineers from award-winning Start up, big companies and boutique agencies, and have a close understanding on Team work in a dynamic and changing environment with emphasis on features delivery at a fast-phase.</p>
+
+<body class="bg-gray-100 font-sans">
+  <!-- ════════════════════ HEADER / NAV ════════════════════ -->
+  <header class="fixed top-0 inset-x-0 z-50 bg-white/90 backdrop-blur-md border-b border-[#DEDEDE]">
+    <div class="max-w-5xl mx-auto px-6 md:px-10 h-16 flex items-center justify-between">
+
+      <!-- Logotype -->
+      <a class="text-xl font-bold text-gray-900 no-underline letter-spacing:0.04em;" href="#" aria-label="Daniela Gattoni — home">
+        Daniela Gattoni<span class="text-pink-500">.</span>
+      </a>
+
+      <!-- Primary navigation -->
+      <nav aria-label="Primary navigation">
+        <ul class="flex items-center gap-7 list-none" style="margin:0;padding:0;">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#stack" class="nav-link">Stack</a></li>
+          <li><a href="https://github.com/dgattoni" target="_blank" rel="noopener" class="nav-link">GitHub</a></li>
+          <li>
+            <a href="https://www.linkedin.com/in/danielagattoni/" target="_blank" rel="noopener"
+              class="hidden sm:inline btn-pink" style="padding:9px 18px; font-size:1rem;">LinkedIn ↗</a>
+          </li>
+        </ul>
+      </nav>
     </div>
-  </main>
-  <div class="Social">
-    <p>Find me on:</p>
-    <ul class="Network">
-      <li class="Network-item Network-item--github"><a class="Network-link" href="https://github.com/dgattoni" target="_blank" title="Github">Github</a></li>
-      <li class="Network-item Network-item--linkedin"><a class="Network-link" href="https://www.linkedin.com/in/danielagattoni/" target="_blank" title="Linkedin">LinkedIn</a></li>
-    </ul>
-  </div>
-  <footer class="Footer">
-    <div class="Container">
-      <p>Daniela Gattoni, Full-Stack Software Engineer, 2026.</p>
+  </header>
+
+
+
+
+  <!-- ════════════════════ MAIN ════════════════════ -->
+  <main id="main-content">
+
+    <!-- ─── HERO ─────────────────────────────────── -->
+    <section aria-label="Introduction"
+      class="relative overflow-hidden min-h-screen flex items-center pt-16">
+
+
+      <!-- Radial wash bottom-left -->
+      <div class="absolute bottom-0 left-0 w-96 h-96 pointer-events-none" aria-hidden="true" style="background:radial-gradient(ellipse at bottom left,
+                  rgba(196,0,95,0.07) 0%, transparent 65%);"></div>
+
+      <div class="relative max-w-5xl mx-auto px-6 md:px-10 py-28 md:py-36 w-full">
+
+        <!-- Kicker -->
+        <p class="fade-up d1 flex items-center gap-3 mb-7 eyebrow">
+          <span style="display:inline-block; width:2rem; height:1px; background:#C4005F;" aria-hidden="true"></span>
+          Full-Stack Software Engineer
+        </p>
+
+        <!-- Name -->
+        <h1 class="fade-up d2 mb-8" style="font-weight:700; text-transform:uppercase;
+                   font-size:clamp(3.4rem,12vw,8.8rem); line-height:0.92;
+                   letter-spacing:0.01em; color:#111111;">
+          Daniela<br />
+          <span style="color:#C4005F;">Gattoni</span>
+        </h1>
+
+        <!-- Tagline -->
+        <p class="fade-up d3 mb-2 max-w-xl" style="color:#3A3A3A;font-size:1.15rem; font-weight:300; line-height:1.65;">
+          Building high-quality web applications for
+          <strong style="color:#111111; font-weight:600;">10+ years</strong>
+        </p>
+
+        <!-- Location -->
+        <p class="fade-up d4 mb-12" style="color:#666666;
+                  font-size:1rem; letter-spacing:0.15em; text-transform:uppercase;">
+          <span aria-hidden="true">📍</span> Melbourne, Australia
+        </p>
+
+        <!-- CTAs -->
+        <div class="fade-up d5 flex flex-wrap gap-4">
+          <a href="https://github.com/dgattoni" target="_blank" rel="noopener" class="btn-pink">View GitHub →</a>
+          <a href="https://www.linkedin.com/in/danielagattoni/" target="_blank" rel="noopener"
+            class="btn-outline">LinkedIn ↗</a>
+        </div>
+
+
+      </div>
+    </section>
+
+    <!-- ─── ABOUT ME ──────────────────────────────── -->
+    <section id="about" aria-labelledby="about-heading" class="section-divider bg-white">
+      <div class="max-w-5xl mx-auto px-6 md:px-10 py-24 md:py-32">
+
+        <!-- Section header row -->
+        <div class="mb-12">
+          <span class="pink-bar" aria-hidden="true"></span>
+          <span class="eyebrow">About Me</span>
+          <h2 id="about-heading" style="font-weight:700; font-size:2.5rem;
+                     text-transform:uppercase; color:#111111; line-height:1.05;">
+            Hello There!
+          </h2>
+        </div>
+
+        <!-- Two-column: photo + text -->
+        <div class="flex flex-col md:flex-row gap-10 md:gap-14 items-start">
+
+          <!-- Photo -->
+          <div class="shrink-0 flex flex-col items-center gap-3">
+            <img src="https://avatars.githubusercontent.com/u/5312844?v=4" alt="Daniela Gattoni" class="avatar"
+              width="120" height="120" loading="lazy" />
+            <!-- Name under avatar on small screens only -->
+            <p class="md:hidden text-center" style="font-weight:600;
+                      font-size:1rem; color:#111111; text-transform:uppercase;
+                      letter-spacing:0.04em;">
+              Daniela Gattoni
+            </p>
+          </div>
+
+          <!-- Bio paragraphs -->
+          <div style="color:#3A3A3A;
+                      line-height:1.85; font-size:1rem; font-weight:400;">
+            <p style="margin-bottom:1.1rem;">
+              I'm a <strong style="color:#111111; font-weight:600;">Full-Stack Software Engineer</strong>
+              with over a decade of experience crafting web applications — with a strong focus
+              on clean, maintainable, and well-tested code.
+            </p>
+            <p style="margin-bottom:1.1rem;">
+              I specialise in
+              <span style="color:#C4005F; font-weight:500;">Ruby on Rails</span>,
+              <span style="color:#C4005F; font-weight:500;">TypeScript</span>,
+              <span style="color:#C4005F; font-weight:500;">ReactJS</span>,
+              and <span style="color:#C4005F; font-weight:500;">GraphQL</span> — backed by
+              rigorous unit, integration and End-to-End (E2E) testing.
+            </p>
+            <p style="margin-bottom:1.1rem;">
+              I hold Web Accessibility Standards close and collaborate seamlessly with Agile
+              PMs, UX/UI designers, and fellow engineers — having contributed across
+              award-winning startups, large enterprises, and boutique agencies.
+            </p>
+            <p>
+              I strongly believe in the power of team communication, meaningful code reviews, and a strong test coverage as pillars of high-quality and long-term maintainable software.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── TECH STACK ────────────────────────────── -->
+    <section id="stack" aria-labelledby="stack-heading" class="section-divider" style="background-color:#F5F5F5;">
+      <div class="max-w-5xl mx-auto px-6 md:px-10 py-24 md:py-32">
+
+        <!-- Section header -->
+        <div class="mb-14">
+          <span class="pink-bar" aria-hidden="true"></span>
+          <span class="eyebrow">Expertise</span>
+          <h2 id="stack-heading" style="font-weight:700; font-size:2.5rem;
+                     text-transform:uppercase; color:#111111;">
+            Tech Stack
+          </h2>
+        </div>
+
+        <!-- 3-column grid -->
+        <div class="grid sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-10">
+
+          <!-- Back-end -->
+          <div>
+            <h3 id="backend" class="stack-category">Back-end</h3>
+            <ul class="flex flex-wrap gap-2 list-none" style="padding:0;" aria-labelledby="backend">
+              <li><span class="skill-tag">Ruby on Rails</span></li>
+              <li><span class="skill-tag">Active Record ORM</span></li>
+              <li><span class="skill-tag">GraphQL and REST APIs</span></li>
+              <li><span class="skill-tag">Unit, Integration, and E2E Testing</span></li>
+            </ul>
+          </div>
+
+          <!-- Front-end -->
+          <div>
+            <h3 id="frontend" class="stack-category">Front-end</h3>
+            <ul class="flex flex-wrap gap-2 list-none" style="padding:0;" aria-labelledby="frontend">
+
+              <li><span class="skill-tag">TypeScript</span></li>
+              <li><span class="skill-tag">ReactJS</span></li>
+              <li><span class="skill-tag">NextJS</span></li>
+              <li><span class="skill-tag">Apollo Client</span></li>
+              <li><span class="skill-tag">Rails Hotwire</span></li>
+              <li><span class="skill-tag">CSS3 and HTML5</span></li>
+              <li><span class="skill-tag">Chakra UI</span></li>
+              <li><span class="skill-tag">Tailwind CSS</span></li>
+              <li><span class="skill-tag">React Testing Library</span></li>
+              <li><span class="skill-tag">Web Accessibility</span></li>
+            </ul>
+          </div>
+ 
+          <!-- Tooling -->
+          <div>
+            <h3 id="tooling" class="stack-category">Tooling</h3>
+            <ul class="flex flex-wrap gap-2 list-none" style="padding:0;" aria-labelledby="tooling">
+              <li><span class="skill-tag">Git</span></li>
+              <li><span class="skill-tag">GitHub Actions</span></li>
+              <li><span class="skill-tag">VSCode + AI Coding Assistant</span></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── CONNECT ───────────────────────────────── -->
+    <section aria-labelledby="connect-heading" class="section-divider dot-bg">
+      <div class="max-w-5xl mx-auto px-6 md:px-10 py-24 md:py-32
+                  flex flex-col md:flex-row items-start md:items-center justify-between gap-12">
+
+        <div>
+          <span class="pink-bar" aria-hidden="true"></span>
+          <span class="eyebrow">Get in Touch</span>
+          <h2 id="connect-heading" style="font-weight:700; text-transform:uppercase;
+                     font-size:clamp(2.1rem,5vw,3.5rem); color:#111111; line-height:1.05;">
+
+            Let's build <span style="color:#C4005F;">Accessible and Performant</span> User Experiences.</span>
+          </h2>
+        </div>
+
+        <div class="flex flex-col gap-4 min-w-fit">
+          <a href="https://github.com/dgattoni" target="_blank" rel="noopener" class="btn-pink text-center">
+            View GitHub →
+          </a>
+          <a href="https://www.linkedin.com/in/danielagattoni/" target="_blank" rel="noopener"
+            class="btn-outline text-center">
+            Connect on LinkedIn ↗
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main><!-- /main -->
+
+  <!-- ════════════════════ FOOTER ════════════════════ -->
+  <footer class="border-t border-[#DEDEDE] bg-white" role="contentinfo">
+    <div class="max-w-5xl mx-auto px-6 md:px-10 py-7
+                flex flex-col sm:flex-row items-center justify-between gap-3">
+
+      <!-- <span class="text-xl font-bold text-gray-900" style="font-family:'Oswald',sans-serif;" aria-label="Daniela Gattoni">
+        DG<span class="text-pink-500">.</span>
+      </span> -->
+
+      <small class="text-sm text-gray-500 letter-spacing-[0.02em] text-align:center" style="font-family:'Work Sans',sans-serif;">
+        Daniela Gattoni &mdash; Full-Stack Software Engineer, Melbourne &copy; 2026. Landing page made with ❤️ in HTML, CSS and Tailwind CSS.
+      </small>
+
+
     </div>
   </footer>
-</div>
-
-
-
 </body>
 
 </html>
