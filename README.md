@@ -1,5 +1,4 @@
 # dgattoni.github.io
 
-Presentation Landing Page.
- 
-A Pen created at CodePen.io. You can find this one at https://codepen.io/danigattoni/pen/baOrKb.
+My personal landing page. 
+Created with HTML, Tailwind CSS, Web Accessibility in mind and a bit of Claude Code AI Assistant.
