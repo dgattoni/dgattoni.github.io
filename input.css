@@ -24,6 +24,10 @@
   h6 {
     @apply font-display;
   }
+
+  a:focus-visible {
+    outline-offset: 4px;
+  }
 }
 
 
