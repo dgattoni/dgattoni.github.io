@@ -156,40 +156,20 @@
 
           <!-- Back-end -->
           <div>
-            <h3 id="backend" class="stack-category">Back-end</h3>
-            <ul class="flex flex-wrap gap-2 list-none p-0" aria-labelledby="backend">
-              <li><span class="skill-tag">Ruby on Rails</span></li>
-              <li><span class="skill-tag">Active Record ORM</span></li>
-              <li><span class="skill-tag">GraphQL and REST APIs</span></li>
-              <li><span class="skill-tag">Unit, Integration, and E2E Testing</span></li>
-            </ul>
+            <skill-component skill-title="Back-end" aria-labelledby="backend"
+              skills='["Ruby on Rails","Active Record ORM","GraphQL and REST APIs","Testing (RSpec, Minitest, Capybara)"]'></skill-component>
           </div>
 
           <!-- Front-end -->
           <div>
-            <h3 id="frontend" class="stack-category">Front-end</h3>
-            <ul class="flex flex-wrap gap-2 list-none p-0" aria-labelledby="frontend">
-              <li><span class="skill-tag">TypeScript</span></li>
-              <li><span class="skill-tag">ReactJS</span></li>
-              <li><span class="skill-tag">NextJS</span></li>
-              <li><span class="skill-tag">Apollo Client</span></li>
-              <li><span class="skill-tag">Rails Hotwire</span></li>
-              <li><span class="skill-tag">CSS3 and HTML5</span></li>
-              <li><span class="skill-tag">Chakra UI</span></li>
-              <li><span class="skill-tag">Tailwind CSS</span></li>
-              <li><span class="skill-tag">React Testing Library</span></li>
-              <li><span class="skill-tag">Web Accessibility</span></li>
-            </ul>
+            <skill-component skill-title="Front-end" aria-labelledby="frontend"
+              skills='["TypeScript","ReactJS","NextJS","Apollo Client","Rails Hotwire","CSS3 and HTML5","Chakra UI","Tailwind CSS","React Testing Library","Web Accessibility"]'></skill-component>
           </div>
 
           <!-- Tooling -->
           <div>
-            <h3 id="tooling" class="stack-category">Tooling</h3>
-            <ul class="flex flex-wrap gap-2 list-none p-0" aria-labelledby="tooling">
-              <li><span class="skill-tag">Git</span></li>
-              <li><span class="skill-tag">GitHub Actions</span></li>
-              <li><span class="skill-tag">VSCode + AI Coding Assistant</span></li>
-            </ul>
+            <skill-component skill-title="Tooling" aria-labelledby="tooling"
+              skills='["Git","GitHub Actions","Figma","VSCode", "AI Coding Assistant (Claude Code)"]'></skill-component>
           </div>
         </div>
       </div>
@@ -225,7 +205,6 @@
   <!-- ════════════════════ FOOTER ════════════════════ -->
   <footer class="border-t border-[#DEDEDE] bg-white">
     <div class="max-w-5xl mx-auto px-6 md:px-10 py-7 flex flex-col items-center justify-between gap-3">
-
       <p class="text-sm text-gray-800 letter-spacing-[0.02em] text-align:center font-body">
         I used some prompt engineering with Claude Code to generate the look & feel, along with some CSS and HTML, and I
         reviewed and audited it, focusing on web accessibility, semantic HTML structure, and Tailwind CSS classes. This
@@ -238,6 +217,22 @@
       </p>
     </div>
   </footer>
+
+  <script>
+    class SkillComponent extends HTMLElement {
+      connectedCallback() {
+        const labelId = this.getAttribute('aria-labelledby');
+        const skills = JSON.parse(this.getAttribute('skills') || '[]');
+        const skillTitle = this.getAttribute('skill-title') || 'Skills';
+        this.innerHTML = `
+          <h3 id="${labelId}" class="stack-category">${skillTitle}</h3>
+          <ul class="flex flex-wrap gap-2 list-none p-0" aria-labelledby="${labelId}">
+            ${skills.map(s => `<li><span class="skill-tag">${s}</span></li>`).join('')}
+          </ul>`;
+      }
+    }
+    customElements.define('skill-component', SkillComponent);
+  </script>
 </body>
 
 </html>
